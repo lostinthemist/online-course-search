@@ -1,0 +1,23 @@
+.searchArea {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    padding: 12px 0;
+    width: 100%;
+
+    .searchIcon {
+        margin: 0 16px;
+        color: gray;
+    }
+
+    .searchInput {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(201, 202, 204);
+        border-radius: 4px;
+        color: black;
+        font-size: 16px;
+        outline: none;
+        margin-left: 8px;
+    }
+}

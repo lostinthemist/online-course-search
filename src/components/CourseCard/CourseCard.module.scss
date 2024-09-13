@@ -1,0 +1,119 @@
+.courseCard {
+    width: 296px;
+    min-height: 338px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .textContainer {
+        padding: 1.25rem;
+        position: relative;
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 12px 0;
+            color: #222;
+            line-height: 1.6;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    
+        p {
+            font-size: 14px;
+            color: #5e5f61;
+            margin-bottom: 12px;
+            line-height: 1.6;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    
+        .label {
+            font-size: 12px;
+            font-weight: bold;
+            color: #524fa1;
+            margin-bottom: 8px;
+            display: block;
+        }
+    
+        .priceContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgb(240, 241, 243);
+            padding-top: 10px;
+
+            span {
+                font-weight: bold;
+                font-size: 16px;
+                color: #222;
+            }
+            span.freeCourse {
+                color: #00ab53;
+            }
+        }
+    
+        .iconTextContainer {
+            margin-top: 20px;
+            position: relative;
+        }
+    
+        .iconText {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+    
+            svg {
+                font-size: 24px;
+                color: #7d7e80;
+                margin-right: 8px;
+            }
+    
+            span {
+                font-size: 12px;
+                color: #7d7e80;
+            }
+        }
+
+        .logoContainer {
+            position: absolute;
+            top: -12px; 
+            right: 0; 
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain; 
+                border-radius: 50%; 
+            }
+        }
+    }
+}
+
+.courseCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
